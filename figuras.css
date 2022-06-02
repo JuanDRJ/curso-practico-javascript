@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'roboto' , sans-serif;
+    font-size: 1.6rem;
+    margin: 30px;
+}
+
+header h1{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+}
+
+header p{
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+}
+.grid-container{
+    display: grid;
+    margin: 100px auto;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: 200px;
+    gap: 20px;
+    place-content: center;
+}
+
+
+.grid-container h2{
+    margin: 0px auto;
+   
+
+}
+
+
+.cuadrado{
+    border: 2px gray solid ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.triangulo{
+    border: 2px gray solid ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.circulo{
+    border: 2px gray solid ;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+form {
+    margin: 5px 0px;
+}
+
+input{
+    margin: 5px 
+}
+
+button{
+   margin: 5px auto;
+   padding: 4px;
+   border-radius: 10px;
+   border-color: white;
+   font-family:'roboto' , sans-serif;
+   font-weight: bold;
+}
