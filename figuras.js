@@ -60,6 +60,4 @@ console.group("Circulos");
     const areaCirculo = (radioCirculo*radioCirculo) * PI;
     console.log("El área del circulo es de: " + areaCirculo + " cm");
 
-
-
 console.groupEnd();
