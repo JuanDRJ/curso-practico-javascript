@@ -1,7 +1,8 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
+    color: white;
 }
 html{
     font-size: 62.5%;
@@ -10,23 +11,46 @@ html{
 body{
     font-family: 'roboto' , sans-serif;
     font-size: 1.6rem;
-    margin: 30px;
+    margin: 0px;
+    color: #333;
+    /* background-color: rgb(247, 247, 247); */
+    background-image: url("https://img.freepik.com/vector-gratis/gradiente-textura-granulada-degradada_23-2148974142.jpg?t=st=1654961799~exp=1654962399~hmac=e219d6e41dae34af7aaed5661bbc097188602831185fab16b7c0c2954b7d8550&w=826");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: block;
+
 }
 
 header h1{
-    margin: 10px auto;
+    padding-top: 100px;
+    padding-bottom: 0px;
     display: flex;
     justify-content: center;
+    font-size: 62px;
+    font-weight: lighter;
+    text-shadow: 0 0 8px #FF0000, 0 0 10px #0000FF;
+    transition: transform .2s; /* Animation */
 }
 
+header h1:hover{
+    transform: scale(1.1);
+}
+header{
+    /* background-image:linear-gradient(rgb(121, 217, 255),rgb(59, 193, 255)); */
+    margin: 0px;
+}
+
+
+
 header p{
-    margin: 20px auto;
+    padding-top: 2pxpx;
+    padding-bottom: 30px;
     display: flex;
     justify-content: center;
 }
 .grid-container{
     display: grid;
-    margin: 100px auto;
+    margin: 0px auto;
     grid-template-columns: repeat(3,350px);
     grid-template-rows: 200px;
     gap: 20px;
@@ -36,27 +60,37 @@ header p{
 
 .grid-container h2{
     margin: 0px auto;
-   
 
 }
 
 
-.cuadrado{
-    border: 2px gray solid ;
+.cuadrado{ 
+    border: 2px purp solid ;
     border-radius: 10px;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    height: max-content;
+
 }
 
 .triangulo{
-    border: 2px gray solid ;
+    box-sizing:border-box;
+    height:max-content;
+    /* border: 2px gray solid ; */
     border-radius: 10px;
     padding: 20px;
+    background-color: rgba(0, 0, 0, 0.50);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .circulo{
-    border: 2px gray solid ;
+    /* border: 2px gray solid ; */
     border-radius: 10px;
     padding: 20px;
+    height:min-content;
+    background-color: rgba(0, 0, 0, 0.50);
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 form {
@@ -64,14 +98,31 @@ form {
 }
 
 input{
-    margin: 5px 
+    margin: 0px; 
+    color:purple;
+    display: flex;
+    width: 50px;
+    height: 20px;
 }
 
 button{
-   margin: 5px auto;
+   display: flex;
+   margin: 10px auto;
    padding: 4px;
    border-radius: 10px;
-   border-color: white;
+   border-style: none;
    font-family:'roboto' , sans-serif;
-   font-weight: bold;
+   font-weight: lighter;
+   background-color: rgba(51, 51, 134,0.50);
+   font-size: 25px;
+   color: rgb(229, 123, 255);
+   transition: transform .2s; /* Animation */
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;  
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+input{
+  box-sizing:border-box;
 }
