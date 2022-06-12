@@ -9,16 +9,32 @@ html{
 }
 
 body{
-    font-family: 'roboto' , sans-serif;
+    font-family: 'Varela Round', sans-serif;
     font-size: 1.6rem;
     margin: 0px;
     color: #333;
     /* background-color: rgb(247, 247, 247); */
-    background-image: url("https://img.freepik.com/vector-gratis/gradiente-textura-granulada-degradada_23-2148974142.jpg?t=st=1654961799~exp=1654962399~hmac=e219d6e41dae34af7aaed5661bbc097188602831185fab16b7c0c2954b7d8550&w=826");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: block;
 
+    /* background-image: url("https://cdn.wallpapersafari.com/32/44/L1fvgT.png"); */
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+
+   
+    /* display: block; */
+    background: linear-gradient(45deg,purple,rgb(225, 0, 255),rgb(141, 6, 85),rgba(255, 99, 242, 0.808)  ) ;
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease infinite; 
+}
+
+section{
+   
+}
+
+@keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 50% 0%;}
 }
 
 header h1{
@@ -60,6 +76,8 @@ header p{
 
 .grid-container h2{
     margin: 0px auto;
+    text-align: center;
+    font-size: 32px;
 
 }
 
@@ -68,7 +86,7 @@ header p{
     border: 2px purp solid ;
     border-radius: 10px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.25);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     height: max-content;
 
@@ -80,7 +98,7 @@ header p{
     /* border: 2px gray solid ; */
     border-radius: 10px;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.25);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -89,7 +107,7 @@ header p{
     border-radius: 10px;
     padding: 20px;
     height:min-content;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.25);
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
@@ -108,10 +126,10 @@ input{
 button{
    display: flex;
    margin: 10px auto;
-   padding: 4px;
+   padding: 8px;
    border-radius: 10px;
    border-style: none;
-   font-family:'roboto' , sans-serif;
+   font-family: 'Varela Round', sans-serif;
    font-weight: lighter;
    background-color: rgba(51, 51, 134,0.50);
    font-size: 25px;
@@ -125,4 +143,37 @@ button:hover{
 }
 input{
   box-sizing:border-box;
+  border:none;
+  background:none;
+  font-size: 24px;
+  height: max-content;
+  color: pink;
+  
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+.input-style{
+    border-bottom: white  1px solid; 
+}
+
+.input-style::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid rgb(255, 0, 242);
+    transform: translateX(-100%);
+    transition: all 0.3s ease;
+
+}
+
+@media all and (max-width: 600px){
+    .grid-container{
+        grid-column:1/span 3;
+    }
 }
